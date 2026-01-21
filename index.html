@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibhuti Bhusan Dash | Full Stack Python Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">BB DASH</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 Theme</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h1>Bibhuti Bhusan Dash</h1>
+            <h2>Full Stack Python Developer</h2>
+            <p class="typing-text" id="typing"></p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#" class="btn btn-secondary" onclick="downloadResume()">Download Resume</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text reveal">
+                <p>Hello! I'm Bibhuti Bhusan Dash, a passionate Full Stack Python Developer with a strong foundation in Django, REST APIs, and database management. I recently graduated with a B.Tech in Computer Science & Engineering from Srinix College of Engineering.</p>
+                <p>With hands-on experience in building scalable web applications, I specialize in backend development using Django framework, creating secure REST APIs, and implementing robust database solutions with MySQL and PostgreSQL.</p>
+                <p>I'm proficient in the complete software development lifecycle (SDLC) and have developed multiple full-stack projects including a Blood Bank Management System and Online Exam Portal. I'm always eager to learn new technologies and solve complex problems.</p>
+                <p>Currently based in Hyderabad and open to relocation, I'm looking for opportunities to contribute to innovative projects and grow as a developer.</p>
+            </div>
+            <div class="about-stats reveal">
+                <div class="stat-card">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Problems Solved</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Projects Built</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8.26</div>
+                    <div class="stat-label">CGPA</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2025</div>
+                    <div class="stat-label">Graduated</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid" id="projectsGrid">
+            <div class="loading">
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+                <div class="loading-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience -->
+    <section id="education">
+        <h2 class="section-title">Education & Training</h2>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <div class="timeline-date">May 2025</div>
+                    <h3>Full Stack Python Development</h3>
+                    <p><strong>Naresh i Technologies, Hyderabad</strong></p>
+                    <p>Developed multiple Django-based web applications using MVT architecture. Built and tested REST APIs, worked with MySQL databases, implemented authentication and role-based access control.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <div class="timeline-date">2021 - 2025</div>
+                    <h3>Bachelor of Technology</h3>
+                    <p><strong>Srinix College of Engineering, Balasore</strong></p>
+                    <p>Computer Science & Engineering | CGPA: 8.26</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <div class="timeline-date">2019 - 2021</div>
+                    <h3>Intermediate (ISC)</h3>
+                    <p><strong>Kalinga Bharati Residential Higher Secondary School, Cuttack</strong></p>
+                    <p>Percentage: 77.66%</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-content">
+                    <div class="timeline-date">2019</div>
+                    <h3>Matriculation</h3>
+                    <p><strong>Gedma High School, Gedma</strong></p>
+                    <p>Percentage: 75.83%</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info reveal">
+                <h3 style="margin-bottom: 2rem;">Contact Information</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>bibhutibhushandash0@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 9438728813</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Hyderabad, Telangana</p>
+                        <p style="font-size: 0.9rem; color: var(--gray);">Native: Keonjhar, Odisha</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p><a href="https://github.com/imdash19" target="_blank" style="color: var(--primary);">github.com/imdash19</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form reveal">
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea required placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/imdash19" target="_blank" class="social-link">💻</a>
+            <a href="https://www.linkedin.com/in/bibhuti" target="_blank" class="social-link">💼</a>
+            <a href="mailto:bibhutibhushandash0@gmail.com" class="social-link">📧</a>
+        </div>
+        <p>&copy; 2025 Bibhuti Bhusan Dash. All rights reserved.</p>
+    </footer>
+</body>
+</html>
